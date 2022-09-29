@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 type Props = {
   children?: React.ReactNode;
@@ -6,11 +8,10 @@ type Props = {
 
 const GlobalLayout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="text-red-500">
-      <>
-        <p>fooooo</p>
-        {children}
-      </>
+    <div>
+      <Navbar />
+      {children}
+      <Footer />
     </div>
   );
 };
