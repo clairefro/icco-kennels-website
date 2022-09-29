@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import ButtonPrimary from "../components/blocks/buttons/ButtonPrimary";
+import ButtonSecondary from "../components/blocks/buttons/ButtonSecondary";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +14,7 @@ const Home: NextPage = () => {
       <p>
         HOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOME
       </p>
+      <ButtonSecondary>MY BUTTON</ButtonSecondary>
       <p>
         HOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOMEHOME
       </p>
