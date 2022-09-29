@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ButtonSecondary from "../blocks/buttons/ButtonSecondary";
 import NavItem from "./components/NavItem";
 
 const Navbar: React.FC = () => {
@@ -9,10 +10,12 @@ const Navbar: React.FC = () => {
         <div className="z-50 flex justify-between p-4 w-full absolute">
           <Link href="/">LOGO</Link>
           <div>
-            <NavItem href="/contact">Contact Us</NavItem>
+            <ButtonSecondary>
+              <NavItem href="/contact">Contact Us</NavItem>
+            </ButtonSecondary>
           </div>
         </div>
-        <div className="h-16 top-0 absolute w-full bg-gradient-to-b from-icco-darkest/100 to-transparent"></div>
+        <div className="h-20 top-0 absolute w-full bg-gradient-to-b from-icco-darkest/100 to-transparent"></div>
       </div>
     </nav>
   );
