@@ -8,9 +8,9 @@ type Props = {
 
 const GlobalLayout: React.FC<Props> = ({ children }) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      {children}
+      <div className="flex-1">{children}</div>
       <Footer />
     </div>
   );
