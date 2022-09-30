@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "kevin-dev": "rm -rf .next && next dev",
+    "dev": "npm run open-browser && next dev",
+    "kevin-dev": "rm -rf .next && npm run dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "open-browser": "open http://localhost:3000"
   },
   "dependencies": {
     "next": "12.3.1",
