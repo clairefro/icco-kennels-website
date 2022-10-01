@@ -1,0 +1,16 @@
+/* override the @szhsin/react-menu styles */
+.icco-menu {
+  top: 20px !important;
+  padding: 0 !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: inherit !important;
+}
+.icco-menu-item {
+  padding: 0 1rem !important;
+}
+.icco-menu-item span {
+  padding: 0.5rem 0 !important;
+}
+.icco-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

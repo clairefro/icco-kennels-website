@@ -3,3 +3,11 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+@import "overrides/react-burger-menu.css";
+@import "overrides/react-menu.css";
+
+html,
+body {
+  overflow-x: hidden;
+}

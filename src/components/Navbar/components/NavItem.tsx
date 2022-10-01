@@ -8,9 +8,9 @@ type Props = {
 
 const Navbar: React.FC<Props> = ({ href, children }) => {
   return (
-    <span>
-      <Link href={href}>
-        <a>{children}</a>
+    <span className="inline-block w-full">
+      <Link className="inline-block w-full" href={href}>
+        <a className="inline-block w-full">{children}</a>
       </Link>
     </span>
   );
