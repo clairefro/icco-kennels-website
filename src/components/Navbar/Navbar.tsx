@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
             <Link href="/">
               <Logo />
             </Link>
-            <span className="text-2xl">Icco Kennels</span>
+            <span className="text-2xl  uppercase">Icco Kennels</span>
           </div>
           <div className="flex items-center">
             <div className="hidden sm:flex gap-6 items-center">

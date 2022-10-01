@@ -1,31 +1,36 @@
+:root {
+  --text-color: rgba(255, 255, 255, 0.9);
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 30px;
   height: 22px;
   right: 22px;
-  top: 22px;
+  top: 35px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #ffffff;
+  background: var(--text-color);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--text-color);
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 36px !important;
   width: 36px !important;
+  top: 25px !important;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--text-color);
   height: 36px !important;
   right: 16px !important;
 }
@@ -58,7 +63,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   font-size: 26px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-color);
   padding: 0.8em;
   display: flex;
   flex-direction: column;
