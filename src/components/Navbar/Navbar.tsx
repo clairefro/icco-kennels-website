@@ -16,12 +16,12 @@ const Navbar: React.FC = () => {
     <nav className="bg-transparent fixed w-screen">
       <div className="relative">
         <div className="z-50 flex justify-between p-4 w-full absolute">
-          <div className="flex items-center gap-4">
-            <Link href="/">
+          <Link href="/">
+            <a className="flex items-center gap-4">
               <Logo />
-            </Link>
-            <span className="text-2xl  uppercase">Icco Kennels</span>
-          </div>
+              <span className="text-2xl  uppercase">Icco Kennels</span>
+            </a>
+          </Link>
           <div className="flex items-center">
             <div className="hidden sm:flex gap-6 items-center">
               <SubmenuNav menuItems={dogMenuItems}>Dogs</SubmenuNav>
