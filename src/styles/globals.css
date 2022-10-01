@@ -7,6 +7,8 @@
 @import "overrides/react-burger-menu.css";
 @import "overrides/react-menu.css";
 
+/* ----- START FONT FACE ----- */
+
 @font-face {
   font-family: "Inria Sans";
   src: url("../fonts/Inria_Sans/InriaSans-Regular.ttf") format("truetype");
@@ -34,12 +36,39 @@
   font-weight: bold;
   font-style: italic;
 }
+/* ----- END FONT FACE ----- */
 
 body {
   font-family: "Inria Sans", sans-serif;
 }
 
 html,
-body {
+body,
+#canvas {
   overflow-x: hidden;
+}
+
+/* For paint background on scroll bounce in CHromium/Safari */
+html,
+body,
+#canvas {
+  @apply bg-icco-darkest;
+}
+
+#navbar {
+  z-index: 999;
+}
+
+.icco-page-banner-title {
+  z-index: 998;
+  top: 380px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.icco-page-banner-arrow {
+  z-index: 998;
+  top: 612px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

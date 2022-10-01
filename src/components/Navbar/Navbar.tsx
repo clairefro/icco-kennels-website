@@ -13,7 +13,7 @@ const dogMenuItems = [
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-transparent fixed w-screen">
+    <nav id="navbar" className="bg-transparent fixed w-screen">
       <div className="relative">
         <div className="z-50 flex justify-between p-4 w-full absolute">
           <Link href="/">
