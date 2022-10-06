@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import PageBanner from "../components/banners/PageBanner/PageBanner";
+import SvgIcon from "../components/blocks/SvgIcon";
 import PaddedContainer from "../components/containers/PaddedContainer";
 import SpacerSm from "../components/spacers/SpacerSm";
 
@@ -17,6 +17,7 @@ const Home: NextPage = () => {
         foofoo foofoo foofoo foofoo foofoo foofoo foo
       </PaddedContainer>
       <SpacerSm />
+      <SvgIcon title="Read more" size="lg" src="/assets/icons/angle-down.svg" />
       {Array.apply(null, Array(200))
         .map(function () {})
         .map((i, j) => {

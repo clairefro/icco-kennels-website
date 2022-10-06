@@ -8,15 +8,16 @@ type Props = {
   size?: "sm" | "md" | "lg";
 };
 
-const sizeMap = {
-  sm: 6,
-  md: 12,
-  lg: 20,
+/** Tailwind sizes */
+const sizeMap: { [key: string]: string } = {
+  sm: "w-6",
+  md: "w-12",
+  lg: "w-20",
 };
 
-const fillMap = {
-  light: "rgba(255,255,255,0.9)",
-  dark: "rgba(0,0,0,0.7)",
+const fillMap: { [key: string]: string } = {
+  light: "white",
+  dark: "black",
 };
 
 const defaults = {
@@ -27,10 +28,17 @@ const defaults = {
 const SvgIcon: React.FC<Props> = ({ src, title, ...rest }) => {
   const rProps = { ...defaults, ...rest };
 
-  const rSize = `w-${sizeMap[rProps.size]}`;
+  /** Resolved values */
+  const rSize = sizeMap[rProps.size];
+  const rFill = fillMap[rProps.fill];
 
   return (
-    <SVG className={rSize} src={src} height="auto" title={title} fill="red" />
+    <SVG
+      className={`${rSize} fill-${rFill} opacity-80`}
+      src={src}
+      height="auto"
+      title={title}
+    />
   );
 };
 

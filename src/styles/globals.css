@@ -72,3 +72,13 @@ body,
   left: 50%;
   transform: translate(-50%, 0);
 }
+
+.icco-icon-sm {
+  @apply w-6 !important;
+}
+.icco-icon-md {
+  @apply w-12 !important;
+}
+.icco-icon-lg {
+  @apply w-20 !important;
+}

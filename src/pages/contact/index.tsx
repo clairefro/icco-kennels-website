@@ -6,7 +6,10 @@ type Props = {};
 const Contact: NextPage = (props: Props) => {
   return (
     <div>
-      <PageBanner imgSrc="/assets/images/page-banners/home.png" />
+      <PageBanner
+        imgSrc="/assets/images/page-banners/home.png"
+        pageTitle="Contact Us"
+      />
     </div>
   );
 };
