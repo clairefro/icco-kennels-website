@@ -12,7 +12,7 @@ const PageBanner: React.FC<Props> = ({ imgSrc, pageTitle }) => {
   return (
     <>
       <div
-        className="w-full bg-icco-dark h-[calc(800px)] bg-cover bg-center"
+        className="w-full bg-icco-dark h-[calc(800px)] bg-cover bg-center relative"
         style={{
           backgroundImage: `url('${imgSrc}')`,
         }}
@@ -28,18 +28,10 @@ const PageBanner: React.FC<Props> = ({ imgSrc, pageTitle }) => {
             src="/assets/icons/angle-down.svg"
           />
         </div>
+        <div className="w-full h-12 absolute bottom-0 bg-gradient-to-t from-icco-darkest/100 to-transparent" />
       </div>
     </>
   );
 };
 
 export default PageBanner;
-
-// {/*<Image
-//         className="z-0 relative"
-//         src="/assets/images/page-banners/home.png"
-//         alt="a dog"
-//         layout="fill"
-//         objectFit="cover"
-//         objectPosition="center"
-//   />*/}
