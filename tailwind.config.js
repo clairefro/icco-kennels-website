@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        current: "currentColor",
         "icco-dark": "#2D2D2D",
         "icco-darkest": "#141414",
         "icco-white": {

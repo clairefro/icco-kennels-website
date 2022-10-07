@@ -15,9 +15,10 @@ const sizeMap: { [key: string]: string } = {
   lg: "w-20",
 };
 
+/** Tailwind fills */
 const fillMap: { [key: string]: string } = {
-  light: "white",
-  dark: "black",
+  light: "fill-white",
+  dark: "fill-black",
 };
 
 const defaults = {
@@ -34,7 +35,7 @@ const SvgIcon: React.FC<Props> = ({ src, title, ...rest }) => {
 
   return (
     <SVG
-      className={`${rSize} fill-${rFill} opacity-80`}
+      className={`${rSize} ${rFill} opacity-80`}
       src={src}
       height="auto"
       title={title}
