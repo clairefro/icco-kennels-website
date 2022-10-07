@@ -7,7 +7,7 @@ const Contact: NextPage = (props: Props) => {
   return (
     <div>
       <PageBanner
-        imgSrc="/assets/images/page-banners/home.png"
+        imgSrc="/assets/images/page-banners/contact.jpg"
         pageTitle="Contact Us"
       />
     </div>
