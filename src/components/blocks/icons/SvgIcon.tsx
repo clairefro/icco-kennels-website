@@ -4,13 +4,14 @@ import SVG from "react-inlinesvg";
 type Props = {
   src: string;
   title: string;
-  fill?: "light" | "dark";
-  size?: "sm" | "md" | "lg";
+  fill?: IconFill;
+  size?: IconSize;
 };
 
 /** Tailwind sizes */
 const sizeMap: { [key: string]: string } = {
-  sm: "w-6",
+  xs: "w-6",
+  sm: "w-8",
   md: "w-12",
   lg: "w-20",
 };
@@ -22,7 +23,7 @@ const fillMap: { [key: string]: string } = {
 };
 
 const defaults = {
-  size: "md",
+  size: "sm",
   fill: "light",
 };
 

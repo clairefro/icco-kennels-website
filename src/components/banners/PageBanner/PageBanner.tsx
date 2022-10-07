@@ -1,7 +1,5 @@
 import React from "react";
-import SvgIcon from "../../blocks/SvgIcon";
-
-import angleDownSvg from "../../../icons/angle-down.svg";
+import SvgIcon from "../../blocks/icons/SvgIcon";
 
 type Props = {
   imgSrc: string;

@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import SvgIcon from "../components/blocks/SvgIcon";
+import SvgIcon from "../components/blocks/icons/SvgIcon";
 import PaddedContainer from "../components/containers/PaddedContainer";
 import SpacerSm from "../components/spacers/SpacerSm";
 
