@@ -14,3 +14,7 @@
 .icco-menu-item:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
+
+.szh-menu-container {
+  position: absolute !important;
+}

@@ -13,7 +13,7 @@ type Props = {
   children: string;
 };
 
-const Navbar: React.FC<Props> = ({ menuItems, children }) => {
+const SubmenuNav: React.FC<Props> = ({ menuItems, children }) => {
   return (
     <Menu
       menuClassName="icco-menu"
@@ -31,4 +31,4 @@ const Navbar: React.FC<Props> = ({ menuItems, children }) => {
   );
 };
 
-export default Navbar;
+export default SubmenuNav;

@@ -38,6 +38,10 @@
 }
 /* ----- END FONT FACE ----- */
 
+html {
+  @apply box-border;
+}
+
 body {
   font-family: "Inria Sans", sans-serif;
 }

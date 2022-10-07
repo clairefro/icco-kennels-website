@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             </a>
           </Link>
           <div className="flex items-center">
-            <div className="hidden sm:flex gap-6 items-center">
+            <div className="hidden sm:flex gap-12 items-center">
               <SubmenuNav menuItems={dogMenuItems}>Dogs</SubmenuNav>
               <NavItem href="/policy">Policy</NavItem>
               <ButtonSecondary className="whitespace-nowrap">
