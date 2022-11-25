@@ -59,6 +59,14 @@ body,
   @apply bg-icco-darkest;
 }
 
+h2 {
+  @apply uppercase text-2xl mb-2;
+}
+
+p {
+  @apply mb-6;
+}
+
 #navbar {
   z-index: 999;
 }
