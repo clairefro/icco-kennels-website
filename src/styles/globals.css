@@ -7,42 +7,11 @@
 @import "overrides/react-burger-menu.css";
 @import "overrides/react-menu.css";
 
-/* ----- START FONT FACE ----- */
-
-@font-face {
-  font-family: "Inria Sans";
-  src: url("/assets/fonts/Inria_Sans/InriaSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inria Sans";
-  src: url("/assets/fonts/Inria_Sans/InriaSans-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inria Sans";
-  src: url("/assets/fonts/Inria_Sans/InriaSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inria Sans";
-  src: url("/assets/fonts/Inria_Sans/InriaSans-BoldItalic.ttf")
-    format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-/* ----- END FONT FACE ----- */
-
 html {
   @apply box-border;
 }
 
+/** Inria Sans font applied in _app.tsx */
 html,
 body {
   font-family: "Inria Sans", sans-serif;
@@ -99,8 +68,4 @@ p {
   top: 660px;
   left: 50%;
   transform: translate(-50%, 0);
-}
-
-#navbar span {
-  color: red;
 }
