@@ -1,24 +1,24 @@
 :root {
-  --text-color: rgba(255, 255, 255, 0.9);
+  --text-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
-  width: 30px;
-  height: 22px;
-  right: 22px;
-  top: 35px;
+  position: fixed !important;
+  width: 30px !important;
+  height: 22px !important;
+  right: 22px !important;
+  top: 35px !important;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: var(--text-color);
+  background: var(--text-color) !important;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--text-color);
+  background: var(--text-color) !important;
 }
 
 /* Position and sizing of clickable cross button */
@@ -30,7 +30,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--text-color);
+  background: var(--text-color) !important;
   height: 36px !important;
   right: 16px !important;
 }
@@ -40,43 +40,43 @@ Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100vw !important;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
   background-color: rgba(0, 0, 0, 0.8) !important;
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  background: #373a47 !important;
+  padding: 2.5em 1.5em 0 !important;
+  font-size: 1.15em !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #373a47 !important;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  font-size: 26px;
-  color: var(--text-color);
-  padding: 0.8em;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-size: 26px !important;
+  color: var(--text-color) !important;
+  padding: 0.8em !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2rem !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 /* Individual item */
 .bm-item {
-  width: 100%;
-  display: inline-block;
+  width: 100% !important;
+  display: inline-block !important;
   z-index: 101 !important;
 }
 
@@ -100,12 +100,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
     display: none !important;
   }
   .bm-burger-button {
-    display: none;
+    display: none !important;
   }
   .bm-overlay {
-    display: none;
+    display: none !important;
   }
   .bm-cross-button {
-    display: none;
+    display: none !important;
   }
 }
