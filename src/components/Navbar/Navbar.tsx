@@ -16,11 +16,9 @@ const Navbar: React.FC = () => {
     <nav id="navbar" className="bg-transparent fixed w-screen">
       <div className="relative">
         <div className="z-50 flex justify-between p-4 w-full absolute">
-          <Link href="/">
-            <a className="flex items-center gap-4">
-              <Logo />
-              <span className="text-2xl  uppercase">Icco Kennels</span>
-            </a>
+          <Link href="/" className="flex items-center gap-4">
+            <Logo />
+            <span className="text-2xl  uppercase">Icco Kennels</span>
           </Link>
           <div className="flex items-center">
             <div className="hidden sm:flex gap-10 items-center">

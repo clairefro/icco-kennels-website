@@ -10,7 +10,7 @@ const Navbar: React.FC<Props> = ({ href, children }) => {
   return (
     <span className="inline-block w-full">
       <Link className="inline-block w-full" href={href}>
-        <a className="inline-block w-full">{children}</a>
+        {children}
       </Link>
     </span>
   );
