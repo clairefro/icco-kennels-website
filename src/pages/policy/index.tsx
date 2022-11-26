@@ -9,7 +9,7 @@ const Policy: NextPage = (props: Props) => {
   return (
     <div>
       <PageBanner
-        imgSrc="./assets/images/page-banners/policy.jpg"
+        imgSrc="/assets/images/page-banners/policy.jpg"
         pageTitle="Our Policy"
       />
       <Section>

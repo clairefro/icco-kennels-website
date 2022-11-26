@@ -43,6 +43,7 @@ html {
   @apply box-border;
 }
 
+html,
 body {
   font-family: "Inria Sans", sans-serif;
 }
@@ -98,4 +99,8 @@ p {
   top: 660px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+#navbar span {
+  color: red;
 }
