@@ -6,6 +6,7 @@ type Props = {
   title: string;
   fill?: IconFill;
   size?: IconSize;
+  onClick?: () => void;
 };
 
 /** Tailwind sizes */
@@ -27,7 +28,7 @@ const defaults = {
   fill: "light",
 };
 
-const SvgIcon: React.FC<Props> = ({ src, title, ...rest }) => {
+const SvgIcon: React.FC<Props> = ({ src, title, onClick, ...rest }) => {
   const rProps = { ...defaults, ...rest };
 
   /** Resolved values */
@@ -36,7 +37,10 @@ const SvgIcon: React.FC<Props> = ({ src, title, ...rest }) => {
 
   return (
     <SVG
-      className={`${rSize} ${rFill} opacity-80`}
+      onClick={onClick}
+      className={`${rSize} ${rFill} opacity-80 ${
+        onClick ? "hover:cursor-pointer" : ""
+      }`}
       src={src}
       height="auto"
       title={title}

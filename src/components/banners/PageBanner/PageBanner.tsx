@@ -1,6 +1,8 @@
 import React from "react";
 import SvgIcon from "../../blocks/icons/SvgIcon";
 
+import bumpScroll from "../../../utils/bumpScroll";
+
 type Props = {
   imgSrc: string;
   pageTitle: string;
@@ -21,6 +23,7 @@ const PageBanner: React.FC<Props> = ({ imgSrc, pageTitle }) => {
         <div className="w-screen h-[calc(800px)] bg-black absolute opacity-50"></div>
         <div className="icco-page-banner-arrow absolute">
           <SvgIcon
+            onClick={() => bumpScroll()}
             title="Read more"
             size="lg"
             src="/assets/icons/angle-down.svg"
