@@ -5,7 +5,8 @@ import GlobalLayout from "../layouts/GlobalLayout";
 
 /** Load global font on build. Applied as class on <main> */
 import { Inria_Sans } from "@next/font/google";
-import initSmartlook from "../utils/initSmartlook";
+import initAnalytics from "../utils/analytics/initAnalytics";
+
 const inriaSans = Inria_Sans({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
@@ -13,8 +14,7 @@ const inriaSans = Inria_Sans({
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    console.log("init app");
-    initSmartlook();
+    initAnalytics();
   }, []);
 
   return (

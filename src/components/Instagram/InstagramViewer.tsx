@@ -47,7 +47,7 @@ const InstagramViewer: React.FC = () => {
     <div className="icco-iframe-wrapper text-white">
       <iframe
         src="https://www.instagram.com/iccokennels/embed"
-        className="mx-auto icco-instagram-viewer"
+        className="mx-auto icco-instagram-viewer rounded-md"
       ></iframe>
     </div>
   );
