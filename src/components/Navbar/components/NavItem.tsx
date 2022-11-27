@@ -4,12 +4,13 @@ import Link from "next/link";
 type Props = {
   href: string;
   children: string;
+  onClick?: () => {};
 };
 
-const Navbar: React.FC<Props> = ({ href, children }) => {
+const Navbar: React.FC<Props> = ({ href, children, onClick }) => {
   return (
     <span className="inline-block w-full">
-      <Link className="inline-block w-full" href={href}>
+      <Link onClick={onClick} className="inline-block w-full" href={href}>
         {children}
       </Link>
     </span>

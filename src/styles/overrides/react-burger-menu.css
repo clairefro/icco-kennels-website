@@ -49,8 +49,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  background: #373a47 !important;
+  background: rgba(0, 0, 0, 0.9) !important;
   padding: 2.5em 1.5em 0 !important;
   font-size: 1.15em !important;
 }
@@ -80,8 +79,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   z-index: 101 !important;
 }
 
-.bm-item span:hover {
-  background-color: blue !important;
+.bm-item-list a,
+.bm-item-list a:hover {
+  border-color: transparent !important;
 }
 
 /* .bm-item:hover {

@@ -38,6 +38,14 @@ p {
   @apply mb-6;
 }
 
+li {
+  @apply mb-4;
+}
+
+a {
+  color: #ff8c69;
+}
+
 .icco-iframe-wrapper {
   position: relative;
   padding-bottom: 100%;
@@ -56,6 +64,26 @@ p {
   z-index: 999;
 }
 
+#navbar a,
+#navbar .szh-menu-button {
+  @apply py-1 text-icco-white-100 border-b-2 border-transparent hover:border-icco-white-90 hover:text-icco-white-90 transition ease-in-out;
+}
+#nav-cta,
+#nav-cta:hover {
+  transition: ease-in-out 0.1s;
+}
+#nav-cta:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#nav-cta a:hover {
+  border-color: transparent;
+}
+
+#logo-box:hover {
+  border-bottom: none;
+}
+
 .icco-page-banner-title {
   z-index: 998;
   top: 380px;
@@ -68,4 +96,8 @@ p {
   top: 660px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.icco-instagram-viewer p {
+  color: white !important;
 }

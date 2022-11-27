@@ -16,15 +16,16 @@ const Navbar: React.FC = () => {
     <nav id="navbar" className="bg-transparent fixed w-screen">
       <div className="relative">
         <div className="z-50 flex justify-between p-4 w-full absolute">
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/" id="logo-box" className="flex items-center gap-4">
             <Logo />
             <span className="text-2xl  uppercase">Icco Kennels</span>
           </Link>
           <div className="flex items-center">
             <div className="hidden sm:flex gap-10 items-center">
               <SubmenuNav menuItems={dogMenuItems}>Dogs</SubmenuNav>
+              <NavItem href="/gallery">Gallery</NavItem>
               <NavItem href="/policy">Policy</NavItem>
-              <ButtonSecondary className="whitespace-nowrap">
+              <ButtonSecondary id="nav-cta" className="whitespace-nowrap">
                 <NavItem href="/contact">Contact Us</NavItem>
               </ButtonSecondary>
             </div>
