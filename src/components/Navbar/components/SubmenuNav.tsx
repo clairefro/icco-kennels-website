@@ -20,7 +20,7 @@ const SubmenuNav: React.FC<Props> = ({ menuItems, children }) => {
       menuButton={<MenuButton>{children}</MenuButton>}
       transition
     >
-      <div className="flex flex-col gap-2 my-2">
+      <div className="flex flex-col ">
         {menuItems.map(({ href, title }, i) => (
           <MenuItem className="icco-menu-item" key={i}>
             <NavItem href={href}>{title}</NavItem>

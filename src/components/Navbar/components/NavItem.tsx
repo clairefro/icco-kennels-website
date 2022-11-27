@@ -4,7 +4,7 @@ import Link from "next/link";
 type Props = {
   href: string;
   children: string;
-  onClick?: () => {};
+  onClick?: () => void;
 };
 
 const Navbar: React.FC<Props> = ({ href, children, onClick }) => {

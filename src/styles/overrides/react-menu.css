@@ -5,9 +5,16 @@
   background-color: rgba(0, 0, 0, 0.6) !important;
   color: inherit !important;
 }
+
 .icco-menu-item {
   padding: 0 1rem !important;
+  margin-bottom: 0 !important;
 }
+
+.icco-menu-item a {
+  border-bottom: none !important;
+}
+
 .icco-menu-item span {
   padding: 0.5rem 0 !important;
 }
